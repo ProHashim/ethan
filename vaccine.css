@@ -60,6 +60,7 @@ header {
     #dad299
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   margin-top: 100px;
+  position: relative;
 }
 .profile-pic {
   flex-basis: 200px;
@@ -96,6 +97,9 @@ h2.name {
 .info {
   list-style-type: none;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
 }
 .logos-container h2 {
   margin-top: 100px;
@@ -115,4 +119,29 @@ h2.name {
 }
 .company img {
   max-width: 200px;
+}
+
+.info img {
+  /* display: none; */
+  max-width: 200px;
+}
+.card:hover img {
+  /* display: block; */
+}
+
+/* mobile version */
+@media screen and (max-width: 600px) {
+  header {
+    padding: 20px;
+  }
+  header h1.title {
+    font-size: 1.3rem;
+  }
+  .card-container {
+    max-width: 350px;
+  }
+  .logos {
+    flex-direction: column;
+    align-items: center;
+  }
 }
